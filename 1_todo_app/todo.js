@@ -10,6 +10,8 @@ function createTodo() {
     let todoList = document.getElementById('todo-list')
     let newTodo = document.createElement('li')
     newTodo.innerText = inputText
-    
+
     todoList.appendChild(newTodo)
+
+    todoInput.value = ''
 }
