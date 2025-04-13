@@ -17,7 +17,28 @@
             <button id="todo-add-btn" class="btn" onclick="createTodo()">추가</button>
         </div>
 
-        <ul id="todo-list"></ul>
+        <ul id="todo-list">
+            <li>
+                <input type="checkbox" onchange="toggleComplete(this)" />
+                <div>
+                    <span class="todo-text">내용이 들어갈 자리1</span>
+                    <span>
+                        <button class="btn edit-btn" onclick="editItem(this)">수정</button>
+                        <button class="btn delete-btn" onclick="deleteItem(this)">삭제</button>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" onchange="toggleComplete(this)" />
+                <div>
+                    <span class="todo-text">내용이 들어갈 자리2</span>
+                    <span>
+                        <button class="btn edit-btn" onclick="editItem(this)">수정</button>
+                        <button class="btn delete-btn" onclick="deleteItem(this)">삭제</button>
+                    </span>
+                </div>
+            </li>
+        </ul>
     </div>
 </body>
 
